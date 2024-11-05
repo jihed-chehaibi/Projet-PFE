@@ -1,0 +1,25 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+.Main {
+  background: linear-gradient(to bottom right, #009cda, #5fafda); /* Dégradé de bleu clair à blanc */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh; /* Ajusté à 100vh pour s'assurer qu'il ne dépasse pas la taille de la fenêtre */
+  margin: 0; /* Supprimer la marge */
+  overflow: hidden;
+  @media (max-width: 768px) {
+    font-size: 12px;
+    padding: 10px;
+    
+   }
+}
+
+
+

@@ -1,0 +1,40 @@
+/* src/components/Alert.css */
+.alert-popup {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff5858; /* Light golden background for a warm look */
+    color: #ffffff; /* Darker text for better readability */
+    padding: 10px;
+    border: 2px solid #ff0000; /* Orange border to match the background */
+    border-radius: 10px; /* More rounded corners for a modern look */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    
+    box-sizing: border-box;
+    width: 80%; /* Set the width to fit the content */
+}
+
+.alert-popup .icon {
+    margin-right: 15px;
+    font-size: 30px; /* Larger icon for better visibility */
+    color: #ff0000f1; /* Same color as border for consistency */
+}
+
+.alert-popup .close-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: auto;
+    transition: color 0.2s;
+}
+
+.alert-popup .close-btn:hover {
+    color: #ffa500; /* Change color on hover for better UX */
+}

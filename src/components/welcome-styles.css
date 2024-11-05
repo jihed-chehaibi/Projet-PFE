@@ -1,0 +1,137 @@
+/* welcome-styles.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.background {
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 2s ease-in; 
+  background-image: url('../assets/bg2.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.welcome-container {
+  text-align: center;
+  color: white;
+  padding: 90px;
+  background: rgba(0, 0, 0, 0.655);
+  border-radius: 15px;
+  animation: slideIn 1s ease-in;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.titre {
+  font-size: 3em;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: textFadeIn 1.5s ease-in;
+}
+
+.buddy-finder {
+  color: #007bff; /* Highlight color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.text {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  animation: textFadeIn 2s ease-in;
+}
+
+@keyframes textFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  animation: buttonRowSlideIn 2s ease-in;
+}
+
+@keyframes buttonRowSlideIn {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.custom-button1, .custom-button2 {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.custom-button1:hover, .custom-button2:hover {
+  transform: scale(1.1);
+  background-color: #0056b3;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.button-separator {
+  width: 10px;
+}
+
+.custom-button1 span, .custom-button2 span {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .welcome-container {
+    padding: 10px;
+  }
+
+  .titre {
+    font-size: 2em;
+  }
+
+  .text {
+    font-size: 1.2em;
+  }
+
+  .custom-button1, .custom-button2 {
+    padding: 15px;
+    font-size: 1em;
+  }
+
+  .custom-button1 span, .custom-button2 span {
+    margin-top: 15px;
+    font-size: 1em;
+  }
+}

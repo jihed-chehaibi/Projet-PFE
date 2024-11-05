@@ -1,0 +1,64 @@
+
+.center--container {
+  background: linear-gradient(to bottom deg, #ffffff, #f9f9f9); /* Dégradé subtil pour ajouter de la profondeur */
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  padding: 2rem; /* Augmentation du padding pour plus de confort visuel */
+  border-radius: 10px; /* Bordure plus arrondie pour une esthétique moderne */
+  border: 8px solid rgba(6, 136, 249, 0.799); /* Bordure subtile */
+  box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1) inset; /* Ombre externe douce et ombre interne subtile */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transitions pour effet de survol */
+  font-family: 'Roboto', sans-serif; /* Police moderne et professionnelle */
+  color: #333; /* Couleur de texte agréable à lire */
+}
+
+/* Effet de survol */
+.center--container:hover {
+  transform: translateY(-5px); /* Légère élévation au survol */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1) inset; /* Ombre plus prononcée */
+}
+
+/* Ajout de styles pour le contenu */
+.center--container h1, .center--container h2, .center--container h3 {
+  color: #00509e; /* Couleur de titre */
+  margin-bottom: 1rem;
+}
+
+.center--container p {
+  line-height: 1.6; /* Amélioration de la lisibilité */
+  margin-bottom: 1rem;
+}
+
+.center--container a {
+  color: #007bff; /* Couleur des liens */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.center--container a:hover {
+  color: #0056b3; /* Couleur des liens au survol */
+}
+
+/* Optionnel : Ajout d'animation pour les nouveaux éléments */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.center--container {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.description-container {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.description-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}

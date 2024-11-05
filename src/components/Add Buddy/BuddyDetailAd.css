@@ -1,0 +1,42 @@
+
+
+  
+  /* Styles spécifiques aux éléments de texte */
+  .center--containerr {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2%;
+    margin-top: 1%;
+    padding-top: 1%;
+    box-shadow: 1px 1px rgba(2, 126, 250, 0.526), -1em 0 .4em rgb(0, 153, 255);
+    
+    
+   }
+  
+   .body1 {
+    font-size: 15px;
+    margin-bottom: 50px;
+    color: rgb(0, 0, 0);
+   }
+   .text-Grid {
+    
+    margin-bottom:2% ;
+    margin-top: 1%;
+    padding-top: 1%;
+    
+   }
+   .text-Grid p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+   }
+   /* BuddyDetailAd.css */
+
+/* BuddyDetailAd.css */
+.first-image .image-gallery-slide img {
+  height: 300px; /* Adjust this height to make the image smaller */
+  object-fit: cover;
+  object-position: center;
+ 
+  
+}
+

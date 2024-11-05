@@ -1,0 +1,52 @@
+/* src/components/Alert.css */
+.alert-popupp {
+  position: fixed;
+  top: 70%;
+  left: 28%;
+  background-color: #ff5858;
+  color: #ffffff;
+  padding: 10px;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  max-width: 20%;
+  box-sizing: border-box;
+}
+
+.alert-popupp .icon {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #ff0000;
+}
+
+.alert-popupp .close-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: auto;
+  transition: color 0.2s;
+}
+
+.alert-popupp .close-btn:hover {
+  color: #ffa500;
+}
+@media screen and (max-width: 768px) {
+  .alert-popupp {
+    left: 11%;
+    max-width: 40%;
+    top: 30%;
+    padding: 4px;
+    font-size: 8px;
+   
+  }
+  .alert-popupp .icon {
+    font-size: 12px;
+  }
+  
+}
